@@ -1,0 +1,24 @@
+{% block body %}
+    <ul class="a-nav a-nav-normal accordion nav-depth-0 clearfix" id="a-nav-normal-0">
+    {% set depth = 0 %}
+    {% for name, level1Item in siblingsmenu %}
+        {% set depth = depth + 1 %}
+        <li class="a-nav-item{% if loop.first %} first{% endif %}{% if level1Item|length %} has-children{% endif %}{% if level1Item.current %} a-current-page active{% endif %}">
+            <div class="a-nav-item-content">
+                <a href="{{ level1Item.uri }}">{{ level1Item.label }}</a>
+            </div>
+            <ul class="a-nav a-nav-normal accordion nav-depth-{{ depth }} clearfix" id="sibling-item-{{ name }}-children"{% if level1Item.current %} style="display: block;"{% endif %}>
+            {% for level2Item in level1Item %}
+
+                <li class="a-nav-item{% if loop.first %} first{% endif %}{% if level2Item|length %} has-children{% endif %}">
+
+                    <div class="a-nav-item-content">
+                        <a href="{{ level2Item.uri }}">{{ level2Item.label }}</a>
+                    </div>
+
+                </li>
+            {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+{% endblock %}

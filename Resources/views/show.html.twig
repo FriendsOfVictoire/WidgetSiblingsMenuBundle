@@ -1,0 +1,11 @@
+{% block body %}
+
+<div class="vic-widget vic-widget-siblingsmenu" id="widget-{{widget.id}}">
+{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
+
+{% block content %}
+    {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentPage })) }}
+{% endblock content %}
+</div>
+
+{% endblock body %}

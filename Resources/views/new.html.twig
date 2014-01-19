@@ -1,0 +1,6 @@
+{% extends 'VictoireCmsBundle:Widget:new.html.twig' %}
+
+{% block body %}
+{{ parent() }}
+<div class="alert alert-warning">{{ 'widget.siblingsmenu.new.nocustomisation'|trans({}, 'victoire') }}</div>
+{% endblock body %}

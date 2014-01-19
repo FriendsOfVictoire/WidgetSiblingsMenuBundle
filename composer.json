@@ -1,0 +1,24 @@
+{
+    "name": "victoire/siblingsmenu-bundle",
+    "type": "symfony-bundle",
+    "description": "Victoire Cms SiblingsMenu widget",
+    "keywords": ["cms", "victoire", "SiblingsMenu", "widget"],
+    "homepage": "http://appventus.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your name",
+            "email": "you@company.com"
+        }
+    ],
+    "require": {
+        "php"                                 : ">=5.3.3",
+        "symfony/framework-bundle"            : "~2.3",
+        "victoire/cms-bundle"                : "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\SiblingsMenuBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/SiblingsMenuBundle"
+}
