@@ -15,7 +15,7 @@ class SiblingsMenuController extends Controller
 {
     /**
      * @Route("/show")
-     * @Template()
+     * @Template("VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show.html.twig")
      * @ParamConverter("page", class="VictoirePageBundle:BasePage")
      */
     public function showAction(BasePage $page)
@@ -23,7 +23,8 @@ class SiblingsMenuController extends Controller
         $siblingsmenu = $this->get('victoire_cms.widget_siblingsmenu_builder');
 
         return array(
-            'siblingsmenu' => $siblingsmenu->build($page));
+            'siblingsmenu' => $siblingsmenu->build($page)
+        );
     }
 
 }
