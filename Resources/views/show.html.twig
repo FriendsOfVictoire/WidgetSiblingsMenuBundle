@@ -4,7 +4,11 @@
 {% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
 
 {% block content %}
-    {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentPage })) }}
+    {% if widget.currentPage.parent %}
+        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentPage })) }}
+    {% else %}
+        <div class="vic-alert vic-alert-warning">{{ 'widget.siblingsmenu.show.empty'|trans({}, 'victoire') }}</div>
+    {% endif %}
 {% endblock content %}
 </div>
 

@@ -22,6 +22,10 @@
         <source>widget.siblingsmenu.edit.nocustomisation</source>
         <target>Il n'y a aucun paramétrage possible pour ce widget.</target>
       </trans-unit>
+      <trans-unit resname="widget.siblingsmenu.show.empty">
+        <source>widget.siblingsmenu.show.empty</source>
+        <target>Non applicable.</target>
+      </trans-unit>
 
     </body>
   </file>
