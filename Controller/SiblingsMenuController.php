@@ -18,12 +18,12 @@ class SiblingsMenuController extends Controller
      * @Template("VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show.html.twig")
      * @ParamConverter("page", class="VictoirePageBundle:BasePage")
      */
-    public function showAction(BasePage $page)
+    public function showAction(BasePage $page, $mode)
     {
         $siblingsmenu = $this->get('victoire_cms.widget_siblingsmenu_builder');
 
         return array(
-            'siblingsmenu' => $siblingsmenu->build($page)
+            'siblingsmenu' => $siblingsmenu->build($page, $mode)
         );
     }
 

@@ -5,7 +5,7 @@
 
 {% block content %}
     {% if widget.currentPage.parent %}
-        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentPage })) }}
+        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentPage, 'mode' : widget.withCousins })) }}
     {% else %}
         <div class="vic-alert vic-alert-warning">{{ 'widget.siblingsmenu.show.empty'|trans({}, 'victoire') }}</div>
     {% endif %}

@@ -26,7 +26,10 @@
         <source>widget.siblingsmenu.show.empty</source>
         <target>Non applicable.</target>
       </trans-unit>
-
+      <trans-unit resname="form.withCousins.label">
+        <source>form.withCousins.label</source>
+        <target>Affichage niveau suppérieur</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

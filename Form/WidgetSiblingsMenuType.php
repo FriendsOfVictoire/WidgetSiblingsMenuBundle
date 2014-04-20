@@ -8,7 +8,6 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\CmsBundle\Form\EntityProxyFormType;
 use Victoire\CmsBundle\Form\WidgetType;
 
-
 /**
  * WidgetSiblingsMenu form type
  */
@@ -25,8 +24,13 @@ class WidgetSiblingsMenuType extends WidgetType
         //choose form mode
         if ($this->entity_name === null) {
             //if no entity is given, we generate the static form
-            $builder
-                        ;
+            $builder->add(
+                'withCousins',
+                null,
+                array(
+                    'label' => "form.withCousins.label"
+                )
+            );
 
         } else {
             //else, WidgetType class will embed a EntityProxyType for given entity
@@ -43,11 +47,13 @@ class WidgetSiblingsMenuType extends WidgetType
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
-        $resolver->setDefaults(array(
-            'data_class'         => 'Victoire\Widget\SiblingsMenuBundle\Entity\WidgetSiblingsMenu',
-            'widget'             => 'siblingsmenu',
-            'translation_domain' => 'victoire'
-        ));
+        $resolver->setDefaults(
+            array(
+                'data_class'         => 'Victoire\Widget\SiblingsMenuBundle\Entity\WidgetSiblingsMenu',
+                'widget'             => 'siblingsmenu',
+                'translation_domain' => 'victoire'
+            )
+        );
     }
 
 

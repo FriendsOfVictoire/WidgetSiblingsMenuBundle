@@ -1,6 +1,10 @@
 {% extends 'VictoireCmsBundle:Widget:edit.html.twig' %}
 
-{% block body %}
-{{ parent() }}
-<div class="alert alert-warning">{{ 'widget.siblingsmenu.edit.nocustomisation'|trans({}, 'victoire') }}</div>
-{% endblock body %}
+{% block form %}
+
+{% form_theme form 'VictoireFormBundle:Form:fields.html.twig' %}
+
+{{ form_widget(form.withCousins) }}
+{{ form_rest(form) }}
+
+{% endblock form %}

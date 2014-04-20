@@ -8,7 +8,8 @@ use Victoire\Widget\SiblingsMenuBundle\Entity\WidgetSiblingsMenu;
 
 class WidgetSiblingsMenuManager
 {
-protected $container;
+
+    protected $container;
 
     /**
      * constructor
