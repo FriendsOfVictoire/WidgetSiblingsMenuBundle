@@ -3,7 +3,7 @@
 namespace Victoire\Widget\SiblingsMenuBundle\SiblingsMenu\Builder;
 
 use Knp\Menu\FactoryInterface;
-use Victoire\PageBundle\Entity\BasePage;
+use Victoire\Bundle\PageBundle\Entity\BasePage;
 
 /**
  * This class generate a siblingsmenu for a Victoire CMS page given
