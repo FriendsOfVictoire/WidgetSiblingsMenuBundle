@@ -1,11 +1,11 @@
 services:
-    victoire_cms.twig.widget_siblingsmenu_manager:
+    victoire_core.twig.widget_siblingsmenu_manager:
         class: Victoire\Widget\SiblingsMenuBundle\Widget\Manager\WidgetSiblingsMenuManager
         arguments: [@service_container]
 
     widget_siblingsmenu_manager:
-        alias: victoire_cms.twig.widget_siblingsmenu_manager
+        alias: victoire_core.twig.widget_siblingsmenu_manager
 
-    victoire_cms.widget_siblingsmenu_builder:
+    victoire_core.widget_siblingsmenu_builder:
         class: Victoire\Widget\SiblingsMenuBundle\SiblingsMenu\Builder\SiblingsMenuBuilder
         arguments: ["@knp_menu.factory"]

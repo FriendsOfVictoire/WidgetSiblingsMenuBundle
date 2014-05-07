@@ -20,7 +20,7 @@ class SiblingsMenuController extends Controller
      */
     public function showAction(BasePage $page, $mode)
     {
-        $siblingsmenu = $this->get('victoire_cms.widget_siblingsmenu_builder');
+        $siblingsmenu = $this->get('victoire_core.widget_siblingsmenu_builder');
 
         return array(
             'siblingsmenu' => $siblingsmenu->build($page, $mode)

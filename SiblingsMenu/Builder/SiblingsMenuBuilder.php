@@ -47,7 +47,7 @@ class SiblingsMenuBuilder
                 $_level2PageItem = $siblingsmenu->addChild(
                     $_level2Page->getSlug(),
                     array(
-                        'route' => 'victoire_cms_page_show',
+                        'route' => 'victoire_core_page_show',
                         'label' => $_level2Page->getTitle(),
                         'routeParameters' => array(
                             'url' => $_level2Page->getUrl()
@@ -62,7 +62,7 @@ class SiblingsMenuBuilder
                     $_level2PageItem->addChild(
                         $_level3Page->getSlug(),
                         array(
-                            'route' => 'victoire_cms_page_show',
+                            'route' => 'victoire_core_page_show',
                             'label' => $_level3Page->getTitle(),
                             'routeParameters' => array(
                                 'url' => $_level3Page->getUrl()
