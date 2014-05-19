@@ -62,6 +62,6 @@ class WidgetSiblingsMenuType extends WidgetType
      */
     public function getName()
     {
-        return 'appventus_victoireCoreBundle_widgetsiblingsmenutype';
+        return 'appventus_victoirecorebundle_widgetsiblingsmenutype';
     }
 }
