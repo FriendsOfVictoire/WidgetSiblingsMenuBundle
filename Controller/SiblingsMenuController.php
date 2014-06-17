@@ -17,6 +17,11 @@ class SiblingsMenuController extends Controller
      * @Route("/show")
      * @Template("VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show.html.twig")
      * @ParamConverter("page", class="VictoirePageBundle:BasePage")
+     *
+     * @param BasePage $page The page
+     * @param string   $mode The mode
+     *
+     * @return Array The menu
      */
     public function showAction(BasePage $page, $mode)
     {
@@ -26,5 +31,4 @@ class SiblingsMenuController extends Controller
             'siblingsmenu' => $siblingsmenu->build($page, $mode)
         );
     }
-
 }
