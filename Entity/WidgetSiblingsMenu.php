@@ -17,7 +17,7 @@ class WidgetSiblingsMenu extends Widget
      *
      * @ORM\Column(name="with_cousins", type="boolean", nullable=true)
      */
-    private $withCousins;
+    protected $withCousins;
 
     /**
      * Get withCousins
@@ -39,5 +39,24 @@ class WidgetSiblingsMenu extends Widget
     {
         $this->withCousins = $withCousins;
         return $this;
+    }
+
+    /**
+     * Get the parent of the page
+     *
+     * @return Page The parent of the page
+     */
+    public function getPageParent()
+    {
+        $parent = null;
+
+        //get the page
+        $page = $this->getPage();
+
+        if ($page !== null) {
+            $parent = $page->getParent();
+        }
+
+        return $parent;
     }
 }
