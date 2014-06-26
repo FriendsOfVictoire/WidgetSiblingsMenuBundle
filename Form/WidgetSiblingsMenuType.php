@@ -13,16 +13,26 @@ use Victoire\Bundle\CoreBundle\Form\WidgetType;
  */
 class WidgetSiblingsMenuType extends WidgetType
 {
-
     /**
      * define form fields
      * @param FormBuilderInterface $builder
      * @param array $options
+     *
+     * @throws Exception
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        $namespace = $options['namespace'];
+        $entityName = $options['entityName'];
+
+        if ($entityName !== null) {
+            if ($namespace === null) {
+                throw new \Exception('The namespace is mandatory if the entity_name is given.');
+            }
+        }
+
         //choose form mode
-        if ($this->entity_name === null) {
+        if ($entityName === null) {
             //if no entity is given, we generate the static form
             $builder->add(
                 'withCousins',
@@ -31,15 +41,10 @@ class WidgetSiblingsMenuType extends WidgetType
                     'label' => "form.withCousins.label"
                 )
             );
-
-        } else {
-            //else, WidgetType class will embed a EntityProxyType for given entity
-            parent::buildForm($builder, $options);
         }
 
-
+        parent::buildForm($builder, $options);
     }
-
 
     /**
      * bind form to WidgetSiblingsMenu entity
@@ -47,6 +52,8 @@ class WidgetSiblingsMenuType extends WidgetType
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
+        parent::setDefaultOptions($resolver);
+
         $resolver->setDefaults(
             array(
                 'data_class'         => 'Victoire\Widget\SiblingsMenuBundle\Entity\WidgetSiblingsMenu',
@@ -56,12 +63,13 @@ class WidgetSiblingsMenuType extends WidgetType
         );
     }
 
-
     /**
      * get form name
+     *
+     * @return string The name of the form
      */
     public function getName()
     {
-        return 'appventus_victoirecorebundle_widgetsiblingsmenutype';
+        return 'victoire_widget_form_siblingsmenu';
     }
 }

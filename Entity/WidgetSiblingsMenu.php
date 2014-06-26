@@ -12,14 +12,12 @@ use Victoire\Bundle\CoreBundle\Entity\Widget;
  */
 class WidgetSiblingsMenu extends Widget
 {
-    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
-
     /**
      * @var string
      *
      * @ORM\Column(name="with_cousins", type="boolean", nullable=true)
      */
-    private $withCousins;
+    protected $withCousins;
 
     /**
      * Get withCousins
@@ -41,5 +39,24 @@ class WidgetSiblingsMenu extends Widget
     {
         $this->withCousins = $withCousins;
         return $this;
+    }
+
+    /**
+     * Get the parent of the page
+     *
+     * @return Page The parent of the page
+     */
+    public function getPageParent()
+    {
+        $parent = null;
+
+        //get the page
+        $page = $this->getPage();
+
+        if ($page !== null) {
+            $parent = $page->getParent();
+        }
+
+        return $parent;
     }
 }

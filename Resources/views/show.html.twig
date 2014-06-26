@@ -1,15 +1,9 @@
-{% block body %}
-
-<div class="vic-widget vic-widget-siblingsmenu" id="widget-{{widget.id}}">
-{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-    {% if widget.currentPage.parent %}
-        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentPage, 'mode' : widget.withCousins })) }}
+    {% if widget.getPageParent %}
+        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.page, 'mode' : widget.withCousins })) }}
     {% else %}
         <div class="vic-alert vic-alert-warning">{{ 'widget.siblingsmenu.show.empty'|trans({}, 'victoire') }}</div>
     {% endif %}
 {% endblock content %}
-</div>
-
-{% endblock body %}
