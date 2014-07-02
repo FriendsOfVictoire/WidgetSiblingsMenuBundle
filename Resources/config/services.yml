@@ -6,6 +6,7 @@ services:
         class: Victoire\Widget\SiblingsMenuBundle\Widget\Manager\WidgetSiblingsMenuManager
         arguments: 
             - "@service_container"
+            - "SiblingsMenu"
 
     widget_siblingsmenu_manager:
         alias: victoire_core.twig.widget_siblingsmenu_manager
