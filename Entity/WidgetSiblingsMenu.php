@@ -31,13 +31,14 @@ class WidgetSiblingsMenu extends Widget
 
     /**
      * Set withCousins
-     *
      * @param string $withCousins
+     *
      * @return $this
      */
     public function setWithCousins($withCousins)
     {
         $this->withCousins = $withCousins;
+
         return $this;
     }
 

@@ -4,13 +4,13 @@ services:
         arguments: ["@knp_menu.factory"]
     victoire_core.twig.widget_siblingsmenu_manager:
         class: Victoire\Widget\SiblingsMenuBundle\Widget\Manager\WidgetSiblingsMenuManager
-        arguments: 
+        arguments:
             - "@service_container"
             - "SiblingsMenu"
 
     widget_siblingsmenu_manager:
         alias: victoire_core.twig.widget_siblingsmenu_manager
-        
+
     #alias to the entity
     victoire.widget.siblingsmenu:
         class: Victoire\Widget\SiblingsMenuBundle\Entity\WidgetSiblingsMenu
@@ -19,4 +19,4 @@ services:
         class: Victoire\Widget\SiblingsMenuBundle\Form\WidgetSiblingsMenuType
         tags:
             - { name: form.type , alias: victoire_widget_form_siblingsmenu}
-        
+
