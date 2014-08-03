@@ -7,7 +7,7 @@ use Victoire\Bundle\CoreBundle\Entity\Widget;
 /**
  * WidgetSiblingsMenu
  *
- * @ORM\Table("cms_widget_siblingsmenu")
+ * @ORM\Table("vic_widget_siblingsmenu")
  * @ORM\Entity
  */
 class WidgetSiblingsMenu extends Widget
