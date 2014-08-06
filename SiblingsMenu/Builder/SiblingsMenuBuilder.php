@@ -3,13 +3,10 @@
 namespace Victoire\Widget\SiblingsMenuBundle\SiblingsMenu\Builder;
 
 use Knp\Menu\FactoryInterface;
-use Victoire\Bundle\PageBundle\Entity\Page;
+use Victoire\Bundle\PageBundle\Entity\BasePage;
 
 /**
  * This class generate a siblingsmenu for a Victoire CMS page given
- *
- * @package VictoireWidgetSiblingsMenuBundle
- * @author
  **/
 class SiblingsMenuBuilder
 {
@@ -27,9 +24,8 @@ class SiblingsMenuBuilder
      * Build a siblingsmenu for a Victoire CMS page given
      *
      * @return MenuItem
-     * @author lenybernard
      **/
-    public function build(Page $page, $withCousins = false)
+    public function build(BasePage $page, $withCousins = false)
     {
         $siblingsmenu = $this->factory->createItem('root');
 
