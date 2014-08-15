@@ -2,7 +2,7 @@
 
 {% block content %}
     {% if widget.getPageParent %}
-        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.page, 'mode' : widget.withCousins })) }}
+        {{ render(controller('VictoireWidgetSiblingsMenuBundle:SiblingsMenu:show', { 'page': widget.currentView })) }}
     {% else %}
         <div class="vic-alert vic-alert-warning">{{ 'widget.siblingsmenu.show.empty'|trans({}, 'victoire') }}</div>
     {% endif %}

@@ -51,11 +51,11 @@ class WidgetSiblingsMenu extends Widget
     {
         $parent = null;
 
-        //get the page
-        $page = $this->getPage();
+        //get the view
+        $view = $this->getCurrentView();
 
-        if ($page !== null) {
-            $parent = $page->getParent();
+        if ($view !== null) {
+            $parent = $view->getParent();
         }
 
         return $parent;
