@@ -2,10 +2,8 @@
 
 namespace Victoire\Widget\SiblingsMenuBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
@@ -15,8 +13,8 @@ class WidgetSiblingsMenuType extends WidgetType
 {
     /**
      * define form fields
-     * @param FormBuilderInterface $builder
-     * @param array $options
+     * @param FormBuilderInterface $builder
+     * @param array                $options
      *
      * @throws Exception
      */
@@ -48,7 +46,7 @@ class WidgetSiblingsMenuType extends WidgetType
 
     /**
      * bind form to WidgetSiblingsMenu entity
-     * @param OptionsResolverInterface $resolver
+     * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
