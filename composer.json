@@ -1,5 +1,5 @@
 {
-    "name": "victoire/siblingsmenu-widget",
+    "name": "appventus/siblingsmenu-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms SiblingsMenu widget",
     "keywords": ["cms", "victoire", "SiblingsMenu", "widget"],
