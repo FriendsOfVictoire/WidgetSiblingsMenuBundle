@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -8,27 +8,27 @@
     <body>
       <trans-unit resname="widget.siblingsmenu.new.action.label">
         <source>widget.siblingsmenu.new.action.label</source>
-        <target>Siblings Menu</target>
+        <target>Menú de paginas hermanas</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.siblingsmenu.label">
         <source>modal.form.widget.type.siblingsmenu.label</source>
-        <target>Siblings Menu</target>
+        <target>Menú de paginas hermanas</target>
       </trans-unit>
       <trans-unit resname="widget.siblingsmenu.new.nocustomisation">
         <source>widget.siblingsmenu.new.nocustomisation</source>
-        <target>No settings required. Thank you to click save to create the menu.</target>
+        <target>No hay ajustes necesarios. Haz clic en guardar para crear el menú.</target>
       </trans-unit>
       <trans-unit resname="widget.siblingsmenu.edit.nocustomisation">
         <source>widget.siblingsmenu.edit.nocustomisation</source>
-        <target>No settings required.</target>
+        <target>No hay ajustes necesarios.</target>
       </trans-unit>
       <trans-unit resname="widget.siblingsmenu.show.empty">
         <source>widget.siblingsmenu.show.empty</source>
-        <target>Non applicable.</target>
+        <target>No aplicable.</target>
       </trans-unit>
       <trans-unit resname="form.withCousins.label">
         <source>form.withCousins.label</source>
-        <target>Viewing higher level</target>
+        <target>Ver el nivel superior</target>
       </trans-unit>
     </body>
   </file>

@@ -1,20 +1,20 @@
 {
     "name": "friendsofvictoire/siblingsmenu-widget",
     "type": "symfony-bundle",
-    "description": "Victoire Cms SiblingsMenu widget",
-    "keywords": ["cms", "victoire", "SiblingsMenu", "widget"],
-    "homepage": "http://appventus.com",
+    "description": "Victoire DCMS SiblingsMenu widget",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "SiblingsMenu"],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Leny Bernard",
-            "email": "leny@appventus.com"
+            "email": "leny@victoire.io"
         }
     ],
     "require": {
         "php"                                 : ">=5.3.3",
         "symfony/framework-bundle"            : "~2.3",
-        "victoire/victoire"                   : ">=0.1.4"
+        "victoire/victoire"                   : "dev-master"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\SiblingsMenuBundle": "" }

@@ -16,19 +16,19 @@
       </trans-unit>
       <trans-unit resname="widget.siblingsmenu.new.nocustomisation">
         <source>widget.siblingsmenu.new.nocustomisation</source>
-        <target>Il n'y a aucun paramétrage possible pour ce widget. Merci de simplement cliquer sur le bouton de sauvegarde pour créer le menu</target>
+        <target>Aucun paramètre nécessaire. Merci de sauvegarder pour créer le menu.</target>
       </trans-unit>
       <trans-unit resname="widget.siblingsmenu.edit.nocustomisation">
         <source>widget.siblingsmenu.edit.nocustomisation</source>
-        <target>Il n'y a aucun paramétrage possible pour ce widget.</target>
+        <target>Aucun paramètre nécessaire.</target>
       </trans-unit>
       <trans-unit resname="widget.siblingsmenu.show.empty">
         <source>widget.siblingsmenu.show.empty</source>
-        <target>Non applicable.</target>
+        <target>Non applicable</target>
       </trans-unit>
       <trans-unit resname="form.withCousins.label">
         <source>form.withCousins.label</source>
-        <target>Affichage niveau suppérieur</target>
+        <target>Affichage du niveau supérieur</target>
       </trans-unit>
     </body>
   </file>

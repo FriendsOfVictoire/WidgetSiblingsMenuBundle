@@ -1,11 +1,12 @@
 <?php
+
 namespace Victoire\Widget\SiblingsMenuBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetSiblingsMenu
+ * WidgetSiblingsMenu.
  *
  * @ORM\Table("vic_widget_siblingsmenu")
  * @ORM\Entity
@@ -20,7 +21,7 @@ class WidgetSiblingsMenu extends Widget
     protected $withCousins;
 
     /**
-     * Get withCousins
+     * Get withCousins.
      *
      * @return string
      */
@@ -30,7 +31,8 @@ class WidgetSiblingsMenu extends Widget
     }
 
     /**
-     * Set withCousins
+     * Set withCousins.
+     *
      * @param string $withCousins
      *
      * @return $this
@@ -43,7 +45,7 @@ class WidgetSiblingsMenu extends Widget
     }
 
     /**
-     * Get the parent of the page
+     * Get the parent of the page.
      *
      * @return Page The parent of the page
      */

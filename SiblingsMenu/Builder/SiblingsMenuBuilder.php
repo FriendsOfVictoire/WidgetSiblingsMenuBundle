@@ -6,7 +6,7 @@ use Knp\Menu\FactoryInterface;
 use Victoire\Bundle\PageBundle\Entity\BasePage;
 
 /**
- * This class generate a siblingsmenu for a Victoire CMS page given
+ * This class generate a siblingsmenu for a Victoire DCMS page given.
  **/
 class SiblingsMenuBuilder
 {
@@ -21,7 +21,7 @@ class SiblingsMenuBuilder
     }
 
     /**
-     * Build a siblingsmenu for a Victoire CMS page given
+     * Build a siblingsmenu for a Victoire DCMS page given.
      *
      * @return MenuItem
      **/
@@ -41,7 +41,7 @@ class SiblingsMenuBuilder
         //                 I.2.1.1.2 Placement
         //                 I.2.1.1.3 Couverture sociale
         //             I.2.1.2 Préparer son retour
-        //         I.2.2 Assurane santé
+        //         I.2.2 Assurance santé
 
         // ________________________________________________
         // || Page                | Children    | Parent ||
