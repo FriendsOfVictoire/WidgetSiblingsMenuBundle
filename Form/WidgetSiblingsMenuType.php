@@ -7,12 +7,13 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
- * WidgetSiblingsMenu form type
+ * WidgetSiblingsMenu form type.
  */
 class WidgetSiblingsMenuType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
      *
@@ -62,7 +63,7 @@ class WidgetSiblingsMenuType extends WidgetType
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The name of the form
      */

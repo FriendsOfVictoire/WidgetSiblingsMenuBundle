@@ -1,14 +1,19 @@
-Victoire CMS SiblingsMenu Bundle
+Victoire DCMS SiblingsMenu Bundle
 ============
 
-Need to add a siblingsmenu in a victoire cms website ?
-Get this siblingsmenu bundle and so on
+##What is the purpose of this bundle
 
-First you need to have a valid Symfony2 Victoire edition.
-Then you just have to run the following composer command :
+This bundles gives you access to the *Siblings Menu Widget*.
 
-    php composer.phar require victoire/siblingsmenu-widget
+##Set Up Victoire
 
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+##Install the bundle
+
+    php composer.phar require friendsofvictoire/siblingsmenu-widget
+
+###Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
