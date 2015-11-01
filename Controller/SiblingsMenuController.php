@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Victoire\Bundle\PageBundle\Entity\BasePage;
 
 /**
- * Display a siblingsmenu for a given page
+ * Display a siblingsmenu for a given page.
  */
 class SiblingsMenuController extends Controller
 {
@@ -26,8 +26,8 @@ class SiblingsMenuController extends Controller
     {
         $siblingsmenu = $this->get('victoire_core.widget_siblingsmenu_builder');
 
-        return array(
-            'siblingsmenu' => $siblingsmenu->build($page)
-        );
+        return [
+            'siblingsmenu' => $siblingsmenu->build($page),
+        ];
     }
 }

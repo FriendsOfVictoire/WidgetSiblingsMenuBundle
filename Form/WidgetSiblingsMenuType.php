@@ -36,9 +36,9 @@ class WidgetSiblingsMenuType extends WidgetType
             $builder->add(
                 'withCousins',
                 null,
-                array(
-                    'label' => "form.withCousins.label"
-                )
+                [
+                    'label' => 'form.withCousins.label',
+                ]
             );
         }
 
@@ -46,7 +46,8 @@ class WidgetSiblingsMenuType extends WidgetType
     }
 
     /**
-     * bind form to WidgetSiblingsMenu entity
+     * bind form to WidgetSiblingsMenu entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
@@ -54,11 +55,11 @@ class WidgetSiblingsMenuType extends WidgetType
         parent::setDefaultOptions($resolver);
 
         $resolver->setDefaults(
-            array(
+            [
                 'data_class'         => 'Victoire\Widget\SiblingsMenuBundle\Entity\WidgetSiblingsMenu',
                 'widget'             => 'siblingsmenu',
-                'translation_domain' => 'victoire'
-            )
+                'translation_domain' => 'victoire',
+            ]
         );
     }
 
