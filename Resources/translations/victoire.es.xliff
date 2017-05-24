@@ -6,27 +6,27 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.siblingsmenu.new.action.label">
+      <trans-unit id="1" resname="widget.siblingsmenu.new.action.label">
         <source>widget.siblingsmenu.new.action.label</source>
         <target>Menú de paginas hermanas</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.siblingsmenu.label">
+      <trans-unit id="2" resname="modal.form.widget.type.siblingsmenu.label">
         <source>modal.form.widget.type.siblingsmenu.label</source>
         <target>Menú de paginas hermanas</target>
       </trans-unit>
-      <trans-unit resname="widget.siblingsmenu.new.nocustomisation">
+      <trans-unit id="3" resname="widget.siblingsmenu.new.nocustomisation">
         <source>widget.siblingsmenu.new.nocustomisation</source>
         <target>No hay ajustes necesarios. Haz clic en guardar para crear el menú.</target>
       </trans-unit>
-      <trans-unit resname="widget.siblingsmenu.edit.nocustomisation">
+      <trans-unit id="4" resname="widget.siblingsmenu.edit.nocustomisation">
         <source>widget.siblingsmenu.edit.nocustomisation</source>
         <target>No hay ajustes necesarios.</target>
       </trans-unit>
-      <trans-unit resname="widget.siblingsmenu.show.empty">
+      <trans-unit id="5" resname="widget.siblingsmenu.show.empty">
         <source>widget.siblingsmenu.show.empty</source>
         <target>No aplicable.</target>
       </trans-unit>
-      <trans-unit resname="form.withCousins.label">
+      <trans-unit id="6" resname="form.withCousins.label">
         <source>form.withCousins.label</source>
         <target>Ver el nivel superior</target>
       </trans-unit>
